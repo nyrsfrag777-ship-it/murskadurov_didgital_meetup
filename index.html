@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Digital Meetup</title>
+<style>
+:root {
+    --primary: #f2f2f7;
+    --secondary: #ffffff;
+    --accent1: #4a6cff;
+    --accent2: #ff4f70;
+    --text: #222222;
+    --text-muted: #666666;
+    --radius: 16px;
+}
+body {
+    margin: 0;
+    font-family: 'Inter', Arial, sans-serif;
+    background: #f2f2f7;
+    color: var(--text);
+}
+header {
+    padding: 40px 20px;
+    text-align: center;
+    background: linear-gradient(135deg, var(--accent1), var(--accent2));
+    animation: gradientMove 6s ease infinite;
+    background-size: 200% 200%;
+    color: white;
+}
+@keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px;
+    background: var(--secondary);
+}
+nav a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero, .section {
+    margin: 30px;
+    padding: 25px;
+    background: #f5eedd;
+    border-radius: var(--radius);
+}
+.btn {
+    display: inline-block;
+    padding: 14px 26px;
+    border-radius: var(--radius);
+    font-size: 16px;
+    font-weight: bold;
+    background: var(--accent1);
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--text-muted);
+}
+</style>
+</head>
+<body>
+<header>
+<h1>Digital Meetup 2025</h1>
+<p>Онлайн‑мероприятие для дизайнеров и разработчиков</p>
+</header>
+
+<nav>
+<a href="#home">Главная</a>
+<a href="#schedule">Расписание</a>
+<a href="#register">Регистрация</a>
+</nav>
+
+<div class="hero" id="home">
+<h2>Присоединяйся к Digital Meetup</h2>
+<p>Узнай тренды IT, познакомься со спикерами и получи новый опыт.</p>
+<a class="btn" href="#register">Регистрация</a>
+</div>
+
+<div class="section" id="schedule">
+<h2>Расписание</h2>
+<div class="session"><h3>10:00 — Открытие</h3><p>Анна Иванова</p></div>
+<div class="session"><h3>11:30 — Дизайн 2025</h3><p>Максим Петров</p></div>
+<div class="session"><h3>14:00 — Искусственный интеллект</h3><p>Елена Смирнова</p></div>
+<div class="session"><h3>16:00 — Q&A</h3><p>Дмитрий К.</p></div>
+</div>
+
+<div class="section" id="register">
+<h2>Регистрация</h2>
+<form>
+<label>Имя</label><br/>
+<input type="text" placeholder="Ваше имя" /><br/><br/>
+<label>Email</label><br/>
+<input type="email" placeholder="example@mail.com" /><br/><br/>
+<input type="checkbox" id="agree" />
+<label for="agree">Согласие на рассылку</label><br/><br/>
+<a class="btn" href="#">Отправить</a>
+</form>
+</div>
+
+<footer>
+© Digital Meetup — 2025<br>
+N.Mursakadyrov
+</footer>
+</body>
+</html>
